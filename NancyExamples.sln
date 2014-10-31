@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotLiquidExtends", "DotLiquidExtends\DotLiquidExtends.csproj", "{91ED20E5-6D04-47DB-B275-515132BAD862}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBinding", "ModelBinding\ModelBinding.csproj", "{FD07D62A-A753-4F3D-8195-59F78BE85059}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{91ED20E5-6D04-47DB-B275-515132BAD862}.Debug|x86.Build.0 = Debug|x86
 		{91ED20E5-6D04-47DB-B275-515132BAD862}.Release|x86.ActiveCfg = Release|x86
 		{91ED20E5-6D04-47DB-B275-515132BAD862}.Release|x86.Build.0 = Release|x86
+		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Debug|x86.ActiveCfg = Debug|x86
+		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Debug|x86.Build.0 = Debug|x86
+		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Release|x86.ActiveCfg = Release|x86
+		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DotLiquidExtends\DotLiquidExtends.csproj
