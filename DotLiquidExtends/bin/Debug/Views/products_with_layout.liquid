@@ -1,10 +1,10 @@
 {% extends layout %}
 
- {% block title %}My AMAZING Website{% endblock %}
+{% block title %}My AMAZING Website{% endblock %}
 
- {% block content %}
-
-    {% assign name = 'test' %}Hello Mr. TES
+{% block content %}
+    {% assign name = 'test' %}
+    Hello Mr. TEST
     <h1>Hello Mr. {{ name }}</h1>
     <h1>Hello Mr. {{ name | upcase }}</h1>
 
@@ -17,5 +17,4 @@
             </li>
         {% endfor %}
     </ul>
-
- {% endblock %}
+{% endblock %}

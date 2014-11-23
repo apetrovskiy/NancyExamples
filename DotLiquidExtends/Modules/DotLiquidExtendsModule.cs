@@ -8,9 +8,9 @@ namespace NancyExamples
     using Nancy.ModelBinding;
     using Nancy.Extensions;
 
-    public class DotLiquidExtensModule : NancyModule
+    public class DotLiquidExtendsModule : NancyModule
     {
-        public DotLiquidExtensModule ()
+        public DotLiquidExtendsModule ()
         {
             Get["/products"] = parameters => {
                 dynamic productsViewModel = new ExpandoObject();
