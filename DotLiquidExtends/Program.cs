@@ -12,7 +12,8 @@ namespace NancyExamples
     {
         public static void Main (string[] args)
         {
-            var host = new NancyHost (new Uri ("http://localhost:8080"));
+            // var host = new NancyHost (new Uri ("http://localhost:8080"));
+            var host = new NancyHost (new Uri ("http://localhost:12340"));
             StaticConfiguration.DisableErrorTraces = false;
 
             Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price" });

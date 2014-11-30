@@ -1,7 +1,11 @@
-using System;
 
-namespace ModelBinding
+namespace NancyExamples
 {
+    using System;
+    using DotLiquid;
+    using Nancy;
+    using Nancy.Hosting.Self;
+    
     class MainClass
     {
         public static void Main (string[] args)
