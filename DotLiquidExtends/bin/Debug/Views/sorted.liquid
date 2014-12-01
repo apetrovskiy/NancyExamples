@@ -8,16 +8,18 @@
             <tr>
                 <!-- <th>Id</th> -->
                 <th>Name</th>
-                <!--<th>Price</th>
+                <th>Price</th>
+                <!--
                 <th>Description</th>
                 <th>Number</th>
                 <th>UniqueId</th>-->
             </tr>
-            {% assign sortedProducts = @Model.Products | sort 'Name' %}
+            {% assign sortedProducts = @Model.Products | sort 'name' %}
             {% for product in sortedProducts %}
             <tr>
                 <!-- <td>{{ product.Id }}</td> -->
                 <td>{{ product.Name }}</td>
+                <td>{{ product.Price }}</td>
             </tr>
             {% endfor %}
         </table>

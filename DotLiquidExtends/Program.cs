@@ -18,10 +18,11 @@ namespace NancyExamples
             var host = new NancyHost (new Uri ("http://localhost:12340"));
             StaticConfiguration.DisableErrorTraces = false;
 
-            Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price", "Description", "Id", "Number", "UniqueId" });
-            Template.RegisterSafeType(typeof(ProductList), new[] { "Products" });
+            // Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price", "Description", "Id", "Number", "UniqueId", "name", "price", "description", "id", "number", "unique_id", "compare_to" });
+            Template.RegisterSafeType (typeof(Product), new[] { "name", "price", "description", "id", "number" });
+            Template.RegisterSafeType(typeof(ProductList), new[] { "Products", "products" });
             Template.RegisterSafeType (typeof(Guid), member => member.ToString ());
-            Template.NamingConvention = new DotLiquid.NamingConventions.CSharpNamingConvention();
+            // Template.NamingConvention = new DotLiquid.NamingConventions.CSharpNamingConvention();
 
             host.Start ();
 
