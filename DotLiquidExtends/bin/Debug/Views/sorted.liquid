@@ -10,7 +10,9 @@
                 <th>Price</th>
                 <th>Description</th>
             </tr>
-            {% assign sortedProducts = @Model.Products | sort ('Name', 'Price') %}
+            <!-- {% assign sortedProducts = @Model.Products | sort ('Name', 'Price') %} -->
+            <!-- {% assign sortedProducts = @Model.Products | sort:'Price' %} -->
+            {% assign sortedProducts = @Model.Products | sort:'Name' %}
             {% for product in sortedProducts %}
             <tr>
                 <td>{{ product.Name }}</td>
