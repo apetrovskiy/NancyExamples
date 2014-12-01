@@ -16,7 +16,8 @@ namespace NancyExamples
             var host = new NancyHost (new Uri ("http://localhost:12340"));
             StaticConfiguration.DisableErrorTraces = false;
 
-            Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price" });
+            Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price", "Description" });
+            Template.RegisterSafeType(typeof(ProductList), new[] { "Products" });
 
             host.Start ();
 

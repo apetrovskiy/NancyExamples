@@ -1,14 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DotLiquidExtends/Views/products_with_layout.liquid">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DotLiquidExtends/Views/sorted.liquid">
     <Files>
-      <File FileName="DotLiquidExtends/Modules/DotLiquidExtendsModule.cs" Line="11" Column="40" />
-      <File FileName="DotLiquidExtends/ObjectModel/Product.cs" Line="1" Column="1" />
-      <File FileName="DotLiquidExtends/Program.cs" Line="1" Column="1" />
+      <File FileName="DotLiquidExtends/Modules/DotLiquidExtendsModule.cs" Line="1" Column="1" />
+      <File FileName="DotLiquidExtends/ObjectModel/Product.cs" Line="11" Column="34" />
+      <File FileName="DotLiquidExtends/Program.cs" Line="19" Column="93" />
       <File FileName="DotLiquidExtends/Views/products_with_layout.liquid" Line="20" Column="15" />
-      <File FileName="DotLiquidExtends/Views/layout.liquid" Line="19" Column="1" />
+      <File FileName="DotLiquidExtends/Views/layout.liquid" Line="1" Column="1" />
       <File FileName="ModelBinding/Program.cs" Line="1" Column="1" />
-      <File FileName="DotLiquidExtends/Views/extension02.liquid" Line="12" Column="11" />
+      <File FileName="DotLiquidExtends/Views/extension02.liquid" Line="1" Column="1" />
+      <File FileName="DotLiquidExtends/Views/sorted.liquid" Line="13" Column="71" />
+      <File FileName="DotLiquidExtends/Modules/SortedProductsModule.cs" Line="27" Column="78" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
