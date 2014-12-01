@@ -7,6 +7,8 @@ namespace NancyExamples
     using Nancy.Hosting;
     using Nancy.Hosting.Self;
     using Nancy.Conventions;
+    using Nancy.Extensions;
+    using DotLiquid.NamingConventions;
 
     class MainClass
     {
@@ -16,8 +18,10 @@ namespace NancyExamples
             var host = new NancyHost (new Uri ("http://localhost:12340"));
             StaticConfiguration.DisableErrorTraces = false;
 
-            Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price", "Description" });
+            Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price", "Description", "Id", "Number", "UniqueId" });
             Template.RegisterSafeType(typeof(ProductList), new[] { "Products" });
+            Template.RegisterSafeType (typeof(Guid), member => member.ToString ());
+            Template.NamingConvention = new DotLiquid.NamingConventions.CSharpNamingConvention();
 
             host.Start ();
 
