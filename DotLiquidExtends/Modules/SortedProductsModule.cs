@@ -46,6 +46,8 @@ namespace NancyExamples
                 });
                 data.Products = list.Products.ToArray();
                 return View ["views/sorted2", data];
+//                var vvv = View["views/sorted2", data];
+//                return vvv;
             };
             
             Get ["/sorted3"] = _ => {
