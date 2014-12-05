@@ -10,6 +10,7 @@
 namespace NancyExamples.Helpers
 {
     using System;
+    using Nancy;
     using Nancy.Bootstrapper;
     
     /// <summary>
@@ -20,9 +21,14 @@ namespace NancyExamples.Helpers
         #region IApplicationStartup implementation
         void IApplicationStartup.Initialize(IPipelines pipelines)
         {
-            pipelines.AfterRequest += (ctx) => {
-Console.WriteLine(ctx.Text);
-            };
+            // pipelines.AfterRequest += (ctx) => Console.WriteLine(ctx.CurrentUser.UserName);
+            
+            // pipelines.BeforeRequest += (ctx) => Console.WriteLine(ctx.CurrentUser.UserName);
+            
+//            pipelines.BeforeRequest += (ctx) => {
+//Console.WriteLine(ctx.CurrentUser.UserName);
+//                return ctx.Response;
+//            };
         }
         #endregion
 //        private IFooFactory fooFactory;

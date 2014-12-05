@@ -12,6 +12,10 @@ namespace NancyExamples
     {
         public SortedProductsModule ()
         {
+            Before += ctx => {
+                Console.WriteLine(ctx.CurrentUser.UserName);
+            };
+            
             Get ["/sorted"] = _ => {
                 dynamic data = new ExpandoObject ();
                 var list = new ProductList ();
