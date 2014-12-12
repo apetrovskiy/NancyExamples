@@ -13,13 +13,16 @@
             <!-- {% assign sortedProducts = @Model.Products | sort ('Name', 'Price') %} -->
             <!-- {% assign sortedProducts = @Model.Products | sort:'Price' %} -->
             {% assign sortedProducts = @Model.Products | sort:'Name' %}
-            {% for product in sortedProducts %}
+            {% for product in sortedProducts -%}
             <tr>
                 <td>{{ product.Name }}</td>
                 <td>{{ product.Price }}</td>
                 <td>{{ product.Description }}</td>
             </tr>
-            {% endfor %}
+            {% endfor -%}
         </table>
+        User host address: {{ @Model.UserHostAddress }}<br>
+        User name: {{ @Model.Username }}<br>
+        Hostname: {{ @Model.Hostname }}<br>
     </body>
 </html>

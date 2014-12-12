@@ -12,9 +12,9 @@ namespace NancyExamples
     {
         public SortedProductsModule ()
         {
-            Before += ctx => {
-                Console.WriteLine(ctx.CurrentUser.UserName);
-            };
+//            Before += ctx => {
+//                Console.WriteLine(ctx.CurrentUser.UserName);
+//            };
             
             Get ["/sorted"] = _ => {
                 dynamic data = new ExpandoObject ();
@@ -31,6 +31,13 @@ namespace NancyExamples
                     new Product { Name = "h", Price = 5, Description = "eight" }
                 });
                 data.Products = list.Products.ToArray();
+                
+                data.UserHostAddress = Request.UserHostAddress;
+                data.Username = Context.CurrentUser;
+                data.Items = this.Context.Items;
+                data.Hostname = this.Request.Url.HostName;
+                // this.Context.Request.Form
+                
                 return View ["views/sorted", data];
             };
             
