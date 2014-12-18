@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+# SharpDevelop 5.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotLiquidExtends", "DotLiquidExtends\DotLiquidExtends.csproj", "{91ED20E5-6D04-47DB-B275-515132BAD862}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBinding", "ModelBinding\ModelBinding.csproj", "{FD07D62A-A753-4F3D-8195-59F78BE85059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotLiquidSort", "dotLiquidSort\dotLiquidSort.csproj", "{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +22,10 @@ Global
 		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Debug|x86.Build.0 = Debug|x86
 		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Release|x86.ActiveCfg = Release|x86
 		{FD07D62A-A753-4F3D-8195-59F78BE85059}.Release|x86.Build.0 = Release|x86
+		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Debug|x86.ActiveCfg = Debug|x86
+		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Debug|x86.Build.0 = Debug|x86
+		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Release|x86.ActiveCfg = Release|x86
+		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DotLiquidExtends\DotLiquidExtends.csproj
