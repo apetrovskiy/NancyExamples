@@ -1,0 +1,31 @@
+﻿
+<html>
+    <head>
+        <title>sorted products</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Number</th>
+                <th>Unique Id</th>
+            </tr>
+            <!-- {% assign sortedProducts = @Model.Products | sort ('Name', 'Price') %} -->
+            <!-- {% assign sortedProducts = @Model.Products | sort:'Price' %} -->
+            {% assign sortedProducts = @Model.Products | sort:'Name' %}
+            {% for product in sortedProducts %}
+            <tr>
+                <td>{{ product.Id }}</td>
+                <td>{{ product.Name }}</td>
+                <td>{{ product.Price }}</td>
+                <td>{{ product.Description }}</td>
+                <td>{{ product.Number }}</td>
+                <td>{{ product.Unique_Id }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
