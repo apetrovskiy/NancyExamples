@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBinding", "ModelBindin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotLiquidSort", "dotLiquidSort\dotLiquidSort.csproj", "{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tinyIocTest", "tinyIocTest\tinyIocTest.csproj", "{1592D3E1-60D8-4816-B027-155C6C7F0D49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -26,6 +28,10 @@ Global
 		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Debug|x86.Build.0 = Debug|x86
 		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Release|x86.ActiveCfg = Release|x86
 		{04E9ADD7-EC4F-40B8-AB58-1964CF2E1367}.Release|x86.Build.0 = Release|x86
+		{1592D3E1-60D8-4816-B027-155C6C7F0D49}.Debug|x86.ActiveCfg = Debug|x86
+		{1592D3E1-60D8-4816-B027-155C6C7F0D49}.Debug|x86.Build.0 = Debug|x86
+		{1592D3E1-60D8-4816-B027-155C6C7F0D49}.Release|x86.ActiveCfg = Release|x86
+		{1592D3E1-60D8-4816-B027-155C6C7F0D49}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DotLiquidExtends\DotLiquidExtends.csproj
