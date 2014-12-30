@@ -25,7 +25,7 @@ Console.WriteLine("START UP 0001");
             base.ApplicationStartup(container, pipelines);
             
 Console.WriteLine("START UP 0002");
-container.Register<I01, Class01>().UsingConstructor<I01>(() => { return new Class01() as I01; });
+container.Register<I01, Class01>().UsingConstructor<I01>(() => new Class01());
 Console.WriteLine("START UP 0003");
             container.Register<Class02>();
 Console.WriteLine("START UP 0004");
