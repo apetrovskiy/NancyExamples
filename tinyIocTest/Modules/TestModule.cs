@@ -11,6 +11,9 @@ namespace tinyIocTest.Modules
 {
     using System;
     using System.Dynamic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Sockets;
     using Nancy;
     using Nancy.TinyIoc;
     using tinyIocTest.Interfaces;
@@ -45,6 +48,19 @@ Console.WriteLine("007");
                 expando.Test03 = TinyIoCContainer.Current.Resolve<Class01>();
                 expando.Test03.Name = "via class";
 Console.WriteLine("008");
+                
+                Console.WriteLine(Dns.GetHostName());
+                IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
+                foreach (IPAddress addr in localIPs.Where(address => address.AddressFamily == AddressFamily.InterNetwork && address.ToString().Substring(0, 7) != "169.254"))
+                {
+                    Console.WriteLine(addr);
+                }
+                
+                var myAddress = Dns.GetHostAddresses(Dns.GetHostName()).First(address => address.AddressFamily == AddressFamily.InterNetwork && address.ToString().Substring(0, 7) != "169.254");
+                Console.WriteLine("this is {0}", myAddress);
+                
+                // expando.Address = 
+                
                 return View["Test", expando];
             };
         }
