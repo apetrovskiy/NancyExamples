@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotLiquidSort", "dotLiquidS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tinyIocTest", "tinyIocTest\tinyIocTest.csproj", "{1592D3E1-60D8-4816-B027-155C6C7F0D49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExchangeService", "DataExchange\DataExchangeService.csproj", "{8A3F4554-65F4-4AD6-A460-9E508E84EBF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExchangeService", "DataExchangeService\DataExchangeService.csproj", "{8A3F4554-65F4-4AD6-A460-9E508E84EBF4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExchangeTester", "DataExchangeTester\DataExchangeTester.csproj", "{72C8A4A9-57C3-4E19-823D-74F118BE1FDB}"
 EndProject

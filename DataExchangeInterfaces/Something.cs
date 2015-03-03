@@ -9,14 +9,15 @@
 
 namespace DataExchangeInterfaces
 {
-	using System;
-	
-	/// <summary>
-	/// Description of Something.
-	/// </summary>
-	public class Something : ISomething
-	{
-		public string StringData { get; set; }
-		public int IntData { get; set; }
-	}
+    using System;
+    
+    /// <summary>
+    /// Description of Something.
+    /// </summary>
+    public class Something : ISomething
+    {
+        public string StringData { get; set; }
+        public int IntData { get; set; }
+        public string Comment { get; set; }
+    }
 }
