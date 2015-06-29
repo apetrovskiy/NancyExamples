@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExchangeInterfaces", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testParameters", "testParameters\testParameters.csproj", "{7333923F-0DDE-4A2C-8D82-94899055371D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBindingSimple", "ModelBindingSimple\ModelBindingSimple.csproj", "{456F57CA-33F5-4EB5-B16D-A80D415455C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -56,6 +58,10 @@ Global
 		{7333923F-0DDE-4A2C-8D82-94899055371D}.Debug|x86.Build.0 = Debug|x86
 		{7333923F-0DDE-4A2C-8D82-94899055371D}.Release|x86.ActiveCfg = Release|x86
 		{7333923F-0DDE-4A2C-8D82-94899055371D}.Release|x86.Build.0 = Release|x86
+		{456F57CA-33F5-4EB5-B16D-A80D415455C4}.Debug|x86.ActiveCfg = Debug|x86
+		{456F57CA-33F5-4EB5-B16D-A80D415455C4}.Debug|x86.Build.0 = Debug|x86
+		{456F57CA-33F5-4EB5-B16D-A80D415455C4}.Release|x86.ActiveCfg = Release|x86
+		{456F57CA-33F5-4EB5-B16D-A80D415455C4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DotLiquidExtends\DotLiquidExtends.csproj
