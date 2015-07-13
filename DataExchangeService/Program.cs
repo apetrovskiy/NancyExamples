@@ -23,10 +23,11 @@ namespace DataExchangeService
             /*
             var host = new NancyHost (new Uri ("http://localhost:12340"));
             StaticConfiguration.DisableErrorTraces = false;
-            host.Start ();
+            host.Start();
 
             Console.WriteLine ("Press any key to stop server...");
             Console.ReadKey ();
+            host.Stop();
             */
             
            NancyHost host = null;

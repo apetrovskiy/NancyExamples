@@ -1,34 +1,28 @@
 ﻿/*
  * Created by SharpDevelop.
  * User: Alexander Petrovskiy
- * Date: 12/22/2014
- * Time: 2:42 PM
+ * Date: 01/07/2015
+ * Time: 10:04 p.m.
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 
-namespace tinyIocTest
+namespace ModelBindingRadio
 {
     using System;
     using Nancy;
     using Nancy.Hosting.Self;
     
-    /// <summary>
-    /// Description of Program.
-    /// </summary>
-    public class Program
+    class Program
     {
         public static void Main(string[] args)
         {
-            var host = new NancyHost (new Uri ("http://localhost:12340"));
-            
-            // http://localhost:12340/sorted
-            
+            var host = new NancyHost (new Uri ("http://localhost:8080"));
             StaticConfiguration.DisableErrorTraces = false;
             
             host.Start();
             
-            Console.WriteLine ("Press any key to stop server...");
+            Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
             host.Stop();
         }

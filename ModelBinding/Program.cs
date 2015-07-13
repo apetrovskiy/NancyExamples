@@ -15,10 +15,11 @@ namespace NancyExamples
             
             Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price" });
             
-            host.Start ();
+            host.Start();
             
             Console.WriteLine ("Press any key to stop server...");
-            Console.ReadKey ();
+            Console.ReadKey();
+            host.Stop();
         }
     }
 }

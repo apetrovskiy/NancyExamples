@@ -18,17 +18,18 @@ namespace NancyExamples
             // http://localhost:12340/sorted
             
             StaticConfiguration.DisableErrorTraces = false;
-
+            
             Template.RegisterSafeType(typeof(Product), new[] { "Name", "Price", "Description" });
 //            Template.RegisterSafeType(typeof(Product2), new[] { "Name", "Price", "Description", "Id", "Number" });
 //            Template.RegisterSafeType(typeof(Product3), new[] { "Name", "Price", "Description", "Id", "Number", "UniqueId" });
             Template.RegisterSafeType(typeof(ProductList), new[] { "Products" });
             Template.RegisterSafeType(typeof(Guid), member => member.ToString());
-
-            host.Start ();
-
+            
+            host.Start();
+            
             Console.WriteLine ("Press any key to stop server...");
-            Console.ReadKey ();
+            Console.ReadKey();
+            host.Stop();
         }
     }
 }

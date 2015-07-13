@@ -20,10 +20,11 @@ namespace ModelBindingSimple
             var host = new NancyHost (new Uri ("http://localhost:8080"));
             StaticConfiguration.DisableErrorTraces = false;
             
-            host.Start ();
+            host.Start();
             
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
+            host.Stop();
         }
     }
 }

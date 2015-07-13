@@ -1,6 +1,6 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: Alexander
+ * User: Alexander Petrovskiy
  * Date: 6/16/2015
  * Time: 12:52 AM
  * 
@@ -20,10 +20,11 @@ namespace testParameters
             
             StaticConfiguration.DisableErrorTraces = false;
             
-            host.Start ();
+            host.Start();
             
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
+            host.Stop();
         }
     }
 }
