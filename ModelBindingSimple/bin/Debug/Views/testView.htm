@@ -1,0 +1,48 @@
+﻿
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <form action="/test" method="post">
+            <input type="checkbox" name="BoolProperty" value="true" checked>BoolProperty</input>
+            <br>
+            <input type="checkbox" name="StringProperty" value="true" checked>StringProperty</input>
+            <br>
+            <input type="checkbox" name="IntProperty" value="true" checked>IntProperty</input>
+            <br>
+            <input type="checkbox" name="Under_score" value="true" checked>Under_score</input>
+            <br>
+            <input type="checkbox" name="No-Dashes" value="true" checked>No-Dashes</input>
+            <br>
+            <input type="checkbox" name="No Spaces 01" value="true" checked>No Spaces 01</input>
+            <br>
+            <input type="checkbox" name="NoSpaces02" value="true" checked>NoSpaces02</input>
+            <br>
+            <input type="checkbox" name="WithКириллица01" value="true" checked>WithКириллица01</input>
+            <br>
+            
+            <input type="checkbox" name="rememberMe" value="true" checked>rememberMe</input>
+            <br>
+            <input type="submit" value="Submit"/>
+        </form>
+        BoolProperty = @Model.BoolProperty
+        <br>
+        StringProperty = @Model.StringProperty
+        <br>
+        IntProperty = @Model.IntProperty
+        <br>
+        Under_score = @Model.Under_score
+        <br>
+        NoDashes = @Model.NoDashes
+        <br>
+        NoSpaces01 = @Model.NoSpaces01
+        <br>
+        NoSpaces02 = @Model.NoSpaces02
+        <br>
+        WithКириллица01 = @Model.WithКириллица01
+        <br>
+        
+        rememberMe = @Model.rememberMe
+    </body>
+</html>
